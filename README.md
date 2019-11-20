@@ -25,11 +25,18 @@ storage while developing for cloud. See here: https://cloud.google.com
 	Migrating the existing Vanhack users (both premium and non-premium users) to this new database
 
 ### Second page (index.html) is for the Vanhackers user and this serves the follow aim:
-	Display events (upcoming & past)- Webinar (Premium & non-premium), Leaps, Recruiting missions, Q & A Sessions, VanHackathons, Meetups, and others
-	Current user must Confirm if already registered this particular event
-	Events can be arranged in desired order
+	Display events (upcoming & past)- 
+		Webinar (Premium & non-premium) 
+		Leaps 
+		Recruiting missions
+		Q & A Sessions
+		VanHackathons
+		Meetups
+		and others
+	Current user can Confirm if already registered any of the displayed events
+	Events can be arranged in any 5 desired order
 	Priority in the list are:
 		Leaps
 		VanHackathons
 		Mission
-	Webinar for Premium can only be applied for by premium members only
+	Webinar for Premium can only be applied for by the premium members only
