@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Calendar Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="codes.js"></script>
+    </head>
+
+    <body onload="loadData()">
+        <div class="head1">
+            <img src="logo.svg" class="pic1"/>
+            <h1 style="text-align: center;">Calendar Page
+           
+                <button class="b2" onclick="openLogin()" id="btn1">Login</button>
+                <button class="b1" onclick="openLogin()" id="btn2">SignUp</button>
+            </h1>
+        </div>
+        <hr/>
+        <div id="page1" class="hot">
+
+        </div>
+        <div id="sortPage">
+                <select id="sortChoice" class="c3" onchange="sortEvents()">
+                    <option value="0" selected disabled>Sort Event By What?</option>
+                    <option value="leap">Only Leap Events</option>
+                    <option value="vanhackathon">Only VanHackathon Events</option>
+                    <option value="mission">Only Mission Events</option>
+                    <option value="date">All Current Events by Dates</option>
+                    <option value="type">All Events by Types </option>
+                    <option value="all">All Events Past and Present</option>
+                </select>
+                
+        </div>
+       <hr/>
+        <div id="login" class="myPop">
+            <h1>Login / SignUp</h1>
+            <br/>
+            <input type="email" class="c1" id="loginEmail" />
+            <br/><br/>
+            <input type="password" class="c1" id="loginPswd" />
+            <br/><br/>
+            <button onclick="checkLogin()" class="b2">Login</button>
+            <button onclick="checkSignup()" class="b1">SignUp</button>
+            <button onclick='{login.style.display="none";}' class="b2">Close</button>
+            <br/><br/>.
+        </div>
+        <div id="detail" class="myPop">
+            <h1 id="detailHead" style="background-color: red; color: white;">The Event</h1>
+            <p id="detailBody"></p>
+            <button class="b2" onclick="hideDetail()">Hide</button>
+            
+        </div>
+        
+        <div id="hotspot">
+           
+        </div>
+    </body>
+</html>

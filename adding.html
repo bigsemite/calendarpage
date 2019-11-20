@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Calendar Page</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase.js"></script>
+        <!--<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>-->
+        
+        <!--<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>-->
+
+        <link rel="stylesheet" href="style.css">
+        <script src="codes.js"></script>
+    </head>
+
+    <body>
+        <div class="head1">
+            <img src="logo.svg" class="pic1"/>
+            <h1 style="text-align: center;">Admin Page
+           
+                <button class="b2" onclick="addUser()">Add User</button>
+                <button class="b1" onclick="addEvent()">Add Event</button>
+            </h1>
+        </div>
+        <hr/>
+        <h2>
+            This page is for Admin Use only.<br/>
+            There are 2 purposes to achieve here, (i) Adding New Events to the database on the cloud
+            (ii) Migrating the existing users Google cloud
+        </h2>
+        <hr/>
+        <div id="pgUser" style="display: none;">
+            <br/>
+            <h2>Adding Users to the Google Cloud. This assumes that existing users are not currently on the cloud</h2>
+            <p id="msg1"></p>
+            <input type="email" placeholder="email address" id="userEmail1" class="c1"/><br/><br/>
+            <input type="checkbox" id="premium"/> Premium User <br/><br/>
+            <button onclick="createUser()" class="c2">Create User</button>
+            <br/><br/>
+            <button onclick="resetPassword()" class="c2">Reset Password</button>
+            <br/><br/>
+        </div>
+
+        <div id="pgEvent">
+            <br/>
+            <h2>Adding Events Details</h2>
+            <input type="text" id="eventId" placeholder="Create a Unique Id for event. No space (e.g VanHackathon2019)" class="c1" />
+            <br/><br/>
+            <select id="eventType" class="c1">
+                <option value="0" selected disabled>Category of This Event</option>
+                <option value="Webinar">Webinar</option>
+                <option value="Leaps">Leaps</option>
+                <option value="Missions">Recruitment Missions</option>
+                <option value="Sessions">Q & A Sessions</option>
+                <option value="Vanhackathon">VanHackathons</option>
+                <option value="Meetups">Meetups</option>
+                <option value="Others">Others</option>
+            </select>
+            <br/><br/>
+            <input type="checkbox" id="premEvent"/> This Event is For Premium Only
+            <br/><br/>
+            <input type="text" id="eventDate" placeholder="Date of Event e.g Nov 20 -25, 2019" class="c1"/>
+            <br/><br/>
+            <input type="text" id="eventLocation" placeholder="Location of Event" class="c1"/>
+            <br/><br/>
+            Deadline of Registration for the Event <input type="date" id="eventLastDate"  class="c3"/>
+            <br/><br/>
+            <textarea id="eventDetail" class="c4" placeholder="Event Details here"></textarea>
+            <br/><br/>
+            <input type="file" id="pic" class="c3" accept="image/*" placeholder="Attach Picture" onchange="showImg(this)" capture></input>
+            <img width="128px" id="myPic"/> <span id="clr" style="display: none;">Uploading ...</span>
+            <br/><br/>
+            <button onclick="storePic()" class="c2">Submit</button>
+            <br/><br/>
+        </div>
+
+        </div>
+    </body>
+</html>

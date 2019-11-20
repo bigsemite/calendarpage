@@ -1,0 +1,104 @@
+body{
+    background-color: white;
+    text-align: center;
+    
+}
+
+.pic1{
+    float: left;
+}
+.head1{
+    background-color: aliceblue;
+    border: grey solid;
+   width: 100%;
+   position:sticky;
+   top: 0; 
+   
+
+}
+.b1{
+    background-color: rgb(28, 132, 223);
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10em;
+}
+.b2{
+    color: rgb(28, 132, 223);
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10em;
+}
+#pgUser, #pgEvent{
+    background-color: rgb(28, 132, 223);
+    color: white;
+    width: 80%;
+    margin-left: 50;;
+}
+.c1{
+    width: 80%;
+    padding: 20px;
+    border: thick;
+    border-radius: 10em;
+    font-size: larger;
+
+}
+.c2{
+    width: 50%;
+    padding: 20px;
+    border: thick;
+    border-radius: 10em;
+    background-color: lightblue;
+}
+.c3{
+    width: 50%;
+    padding: 20px;
+    border: thick;
+    border-radius: 10em;
+    font-size: larger;
+}
+
+.c4{
+    width: 80%;
+    padding: 20px;
+    border: thick;
+    
+
+}
+#hotspot{
+    width: 90%;
+    
+}
+
+.mysection{
+    
+    background-color: whitesmoke;
+    
+    width: 20%;
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid;
+    box-shadow: 5px 10px grey;
+
+}
+
+.myPop{
+    position: fixed;
+    width: 80%;
+    top: 10;
+    z-index: 9;
+    background-color: rgb(6, 146, 233);
+    color: white;
+    display: none;
+
+}
+.hot{
+    width: 95%;
+    border: 1px solid;
+    box-shadow: 5px 10px grey;
+}
