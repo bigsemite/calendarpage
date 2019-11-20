@@ -315,7 +315,7 @@ function applyEvent(d, pm){
 });
 
 
-    alert(d +" : " + pm);
+    //alert(d +" : " + pm);
     
 }
 
@@ -342,7 +342,7 @@ function checkLogin(){
     eml = loginEmail.value;
 	pswd = loginPswd.value;
 	
-    alert(pswd);
+    
 	firebase.auth().signInWithEmailAndPassword(eml,pswd).then(function(user){
         login.style.display = "none";
         btn1.style.display = "none";
@@ -356,7 +356,7 @@ function checkLogin(){
 
 //When User Apply store it in the database
 function applyers(doc, em){
-    alert(doc +":" + em);
+    
     var myDB = firebase.firestore();
     myDB.collection("CalendarPage").doc(doc).collection("APPLIED").add({
         PERSON: em
