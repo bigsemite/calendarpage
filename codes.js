@@ -1,7 +1,7 @@
 //Firebase config for this app
 
 var config = {
-    apiKey: "API-KEY HERE",
+    apiKey: "AIzaSyBtEkgZqUZMKWbGWV6eVpr7e1lFTCu5iWE",
     authDomain: "vanhackathon2019.firebaseapp.com",
     databaseURL: "https://vanhackathon2019.firebaseio.com",
     projectId: "vanhackathon2019",
